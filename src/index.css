@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn-primary {
+    @apply rounded-4xl py-4 px-8 font-semibold text-white cursor-pointer text-[14px]
+           inline-flex items-center justify-center
+           transition-all duration-300 hover:-translate-y-1;
+    background: linear-gradient(135deg, rgb(249, 115, 22), rgb(234, 88, 12));
+  }
+
+  .btn-secondary {
+    @apply rounded-4xl py-4 px-8 font-semibold text-white cursor-pointer text-[14px]
+           bg-transparent border border-[#333]
+           transition-all duration-300 hover:bg-orange-500/10 hover:border-orange-900 hover:text-orange-500;
+  }
+
+  .gradient-text {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(135deg, rgb(249, 115, 22), rgb(251, 191, 36))
+      text;
+  }
+
+  .glass-card {
+    @apply rounded-3xl border border-[#262626] text-center ;
+    background: #161616cc;
+    backdrop-filter: blur(20px);
+  }
+
+  .section-title {
+    @apply text-neutral-50 text-5xl md:text-6xl lg:text-7xl font-semibold leading-snug;
+  }
+
+  .section-subtitle {
+    @apply text-neutral-400 text-[18px] md:text-[20px] lg:text-[24px] mt-3;
+  }
+
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  
+}
+
+
+
+@layer utilities {
+  .container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+}
