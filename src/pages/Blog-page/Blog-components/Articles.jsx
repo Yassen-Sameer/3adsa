@@ -158,7 +158,7 @@ export default function Articles() {
               </button>
             )}
 
-            <div className="flex items-center bg-[#161616] border border-[#262626] rounded-xl p-1">
+            <div className="hidden lg:flex items-center bg-[#161616] border border-[#262626] rounded-xl p-1">
               <button
                 onClick={() => setViewMode("grid")}
                 className={`cursor-pointer p-2 rounded-lg transition-all duration-300 ${
